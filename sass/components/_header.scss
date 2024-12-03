@@ -1,0 +1,85 @@
+.header {
+    background-image: url(../img/presentation.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+
+
+    &__first {
+
+        background-color: $header-bg;
+        padding: 25px 0 24px 0;
+
+    }
+
+
+    &__wrapp {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    &__nav {
+        display: none;
+    }
+
+    &__btn {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1207px) {
+
+    .header {
+
+        &__nav {
+            display: block;
+        }
+
+        &__btn {
+            display: block;
+        }
+
+        &__list {
+            display: flex;
+            gap: 42px;
+        }
+
+        &__link {
+            font-family: "Red Hat Text", serif;
+            color: $bg;
+            font-weight: 500;
+            font-size: 16px;
+        }
+
+        &__btn {
+            font-family: "Red Hat Text", serif;
+            color: $bg;
+            background-color: $main-color;
+            padding: 10px 30px 10px 30px;
+            border: none;
+            display: inline-block;
+            border-radius: 10px;
+            font-weight: 500;
+            font-size: 16px;
+            cursor: pointer;
+            transition-property: backgroundcolor, color;
+            transition-duration: 700ms;
+            transition-timing-function: ease;
+
+            &:hover,
+            &:focus{
+
+                background-color: $bg;
+                color: $main-color;
+                
+
+            }
+        }
+
+        &__
+    }
+}

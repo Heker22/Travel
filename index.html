@@ -20,27 +20,29 @@
 
 <body>
     <header class="header">
-        <div class="container">
-            <a class="header__logo" href=""><img class="header__img" src="./img/logo-head.png" alt=""></a>
-            <nav class="header__nav">
-                <ul class="header__list">
-                    <li class="header__item">
-                        <a href="#" class="header_link">How It Works</a>
-                    </li>
-                    <li class="header__item">
-                        <a href="#" class="header_link">Plan Your Trip</a>
-                    </li>
-                    <li class="header__item">
-                        <a href="#" class="header_link">Destinations</a>
-                    </li>
-                    <li class="header__item">
-                        <a href="#" class="header_link">Travel Storie</a>
-                    </li>
-                </ul>
-            </nav>
-            <button class="header__btn">
-                <a href="" class="header__link-btn">Login</a>
-            </button>
+        <div class=" header__first">
+            <div class="container header__wrapp">
+                <a class="header__logo" href=""><img class="header__img" src="./img/logo-head.png" alt=""></a>
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a href="#" class="header__link">How It Works</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link">Plan Your Trip</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link">Destinations</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link">Travel Stories</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="header__btn">
+                   Login
+                </button>
+            </div>
             <!--Modal here-->
         </div>
 
@@ -52,10 +54,11 @@
                 Receive personalized recommendations for countries, hotels, activities and more
             </p>
             <form action="">
-                <p class="header__form-text">What would you like to do?</p>
-                <input type="button">      <!--ask how to add text-->                 
+                <input class="header__input" type="text" placeholder="What would you like to do?">
+                <button class="header__form-btn">
+                    Start Planning
+                </button>
             </form>
-            <!--For button put first form then input, and in input u put btn -->
         </div>
     </header>
 

@@ -23,3 +23,29 @@ a {
     text-decoration: none;
 }
 
+.container {
+    width: 390px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+@media screen and (min-width: 798px) {
+
+
+    .container {
+        width: 798px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+}
+
+@media screen and (min-width: 1207px ) {
+
+
+    .container {
+        width: 1207px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+}
