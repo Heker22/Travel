@@ -1,3 +1,4 @@
+/*&__{}*/
 .header {
     background-image: url(../img/presentation.png);
     background-repeat: no-repeat;
@@ -53,6 +54,17 @@
             color: $bg;
             font-weight: 500;
             font-size: 16px;
+            transition-property: color;
+            transition-duration: 700ms;
+            transition-timing-function: ease;
+
+            &:hover,
+            &:focus {
+
+                color: $main-color;
+
+
+            }
         }
 
         &__btn {
@@ -71,15 +83,84 @@
             transition-timing-function: ease;
 
             &:hover,
-            &:focus{
+            &:focus {
 
                 background-color: $bg;
                 color: $main-color;
-                
+
 
             }
         }
 
-        &__
+        &__wrap {
+            padding: 32px 0 240px 0;
+            color: $bg ;
+        }
+
+
+        &__title {
+            font-weight: 700;
+            font-size: 80px;
+            font-family: "Aleo", serif;
+
+        }
+
+        &__text {
+            font-style: italic;
+            font-weight: 700;
+            font-size: 20px;
+            margin-top: 45px;
+            margin-bottom: 46px;
+        }
+
+        &__form {
+            position: relative;
+            
+        }
+
+        &__input {
+            width: 892px;
+            color: $header-bg;
+            padding: 32px 0 41px 41px;
+            background-color: $background-color-first;
+            border: none;
+            border-radius: 16px;
+            font-style: italic;
+            font-weight: 400;
+            font-size: 24px;
+            font-family: "Aleo", serif;
+            display: flex;
+            align-items: center;
+            outline: none;
+        }
+
+        /*scrivere stili per input *color,ecc.* con java script*/
+
+        &__form-btn {
+            font-family: "Red Hat Text", serif;
+            background-color: $main-color;
+            padding: 14px 36px 14px 36px;
+            color: $bg;
+            border: none;
+            border-radius: 10px;
+            transition-property: backgroundcolor, color;
+            transition-duration: 700ms;
+            transition-timing-function: ease;
+            font-weight: 500;
+            font-size: 24px;
+            position: absolute;
+            left: 640px;
+            top: 18px;
+            cursor: pointer;
+
+
+            &:hover,
+            &:focus {
+
+                background-color: $bg;
+                color: $main-color;
+
+            }
+        }
     }
 }
