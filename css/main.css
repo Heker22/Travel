@@ -29,6 +29,12 @@ a {
   padding: 0 15px;
 }
 
+.img {
+  display: block;
+  max-width: 100%;
+  margin: 0;
+}
+
 @media screen and (min-width: 798px) {
   .container {
     width: 798px;
@@ -207,4 +213,89 @@ a {
   font-size: 20px;
   font-family: "Aleo", serif;
   margin-top: 30px;
+}
+
+/*&__{}*/
+.destinations {
+  padding: 97px 0 80px 0;
+}
+.destinations__title {
+  font-weight: 500;
+  font-size: 40px;
+  margin-bottom: 46px;
+  color: #f2785c;
+  font-family: "Red Hat Text", sans-serif;
+  text-align: center;
+}
+.destinations__wrap {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 24px;
+}
+.destinations__img {
+  width: 800px;
+  border-radius: 16px;
+}
+.destinations__word {
+  position: absolute;
+  bottom: 30px;
+  left: 205px;
+  font-weight: 500;
+  font-size: 32px;
+  font-family: "Red Hat Text", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+}
+.destinations__item {
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(242, 120, 92, 0.7);
+  width: 20px;
+  height: 20px;
+}
+.destinations__list {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.destinations__item:nth-child(2) {
+  background-color: #f2785c;
+}
+.destinations__btn {
+  padding: 14px 31px 14px 31px;
+  background-color: #0d606f;
+  border: 1px solid #0d606f;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 24px;
+  color: #fff;
+  font-family: "Red Hat Text", sans-serif;
+  transition-property: background-color, color, border-color;
+  transition-duration: 700ms;
+  transition-timing-function: ease;
+  cursor: pointer;
+  margin-top: 40px;
+}
+.destinations__btn:hover, .destinations__btn:focus {
+  background-color: #fff;
+  color: #0d606f;
+  border: 1px solid #0d606f;
+}
+.destinations__svg {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+}
+.destinations__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.destinations__btn:hover .destinations__svg {
+  fill: #0d606f;
+  transition-property: fill;
+  transition-duration: 700ms;
+  transition-timing-function: ease;
 }/*# sourceMappingURL=main.css.map */

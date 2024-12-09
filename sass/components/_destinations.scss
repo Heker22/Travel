@@ -1,0 +1,106 @@
+/*&__{}*/
+.destinations {
+    padding: 97px 0 80px 0;
+
+
+    &__title {
+        font-weight: 500;
+        font-size: 40px;
+        margin-bottom: 46px;
+        color: $title-color;
+        font-family: "Red Hat Text", sans-serif;
+        text-align: center;
+    }
+
+    &__wrap {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        margin-bottom: 24px;
+    }
+
+
+    &__img {
+        width: 800px;
+        border-radius: 16px;
+    }
+
+
+    &__word {
+        position: absolute;
+        bottom: 30px;
+        left: 205px;
+        font-weight: 500;
+        font-size: 32px;
+        font-family: "Red Hat Text", sans-serif;
+        color: $bg;
+        text-transform: uppercase;
+    }
+
+    &__item {
+        border-radius: 50%;
+        border: none;
+        background-color: $header-bg;
+        width: 20px;
+        height: 20px;
+    }
+
+    &__list {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__item:nth-child(2) {
+        background-color: $title-color;
+    }
+
+    &__btn {
+        padding: 14px 31px 14px 31px;
+        background-color: $main-color;
+        border: 1px solid $main-color;
+        border-radius: 10px;
+        font-weight: 500;
+        font-size: 24px;
+        color: $bg;
+        font-family: "Red Hat Text", sans-serif;
+        transition-property: background-color, color, border-color;
+        transition-duration: 700ms;
+        transition-timing-function: ease;
+        cursor: pointer;
+        margin-top: 40px;
+
+        &:hover,
+        &:focus {
+            background-color: $bg;
+            color: $main-color;
+            border: 1px solid $main-color;
+        }
+
+
+    }
+
+    &__svg {
+        width: 20px;
+        height: 20px;
+        fill: $bg;
+
+
+
+
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        
+    }
+}
+
+.destinations__btn:hover .destinations__svg {
+    fill: $main-color;
+    transition-property: fill;
+    transition-duration: 700ms;
+    transition-timing-function: ease;
+}
