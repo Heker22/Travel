@@ -1,0 +1,80 @@
+/*&__{}*/
+.stories {
+    padding: 80px 0 0 0;
+
+    &__wrapper {
+        background-image: linear-gradient(to top, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../../img/footer-img.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+
+    &__title {
+        font-weight: 500;
+        font-size: 40px;
+        color: $title-color;
+        text-align: center;
+        font-family: "Red Hat Text", sans-serif;
+        margin-bottom: 50px;
+
+    }
+
+
+    &__wrapper {
+        padding: 30px 120px 30px 120px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        font-family: "Aleo", sans-serif;
+    }
+
+    &__item {
+        display: flex;
+        gap: 40px;
+    }
+
+    &__img {
+        border-radius: 16px;
+
+    }
+
+    &__subtitle {
+        font-weight: 400;
+        font-size: 35px;
+        color: $main-color;
+        margin-bottom: 24px;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 20px;
+        color: $main-color;
+    }
+
+    &__link {
+        color: $main-color;
+        text-decoration: underline;
+        font-family: "Aleo", sans-serif;
+    }
+
+
+
+    
+}
+
+.footer__text {
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    color: $bg;
+    margin-top: 14px;
+}
+
+
+.destinations__btn{
+    margin-bottom: 55px;
+}

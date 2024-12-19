@@ -72,13 +72,13 @@
             color: $bg;
             background-color: $main-color;
             padding: 10px 30px 10px 30px;
-            border: none;
+            border: 1px solid $main-color;
             display: inline-block;
             border-radius: 10px;
             font-weight: 500;
             font-size: 16px;
             cursor: pointer;
-            transition-property: backgroundcolor, color;
+            transition-property: backgroundcolor, color, border-color;
             transition-duration: 700ms;
             transition-timing-function: ease;
 
@@ -87,6 +87,7 @@
 
                 background-color: $bg;
                 color: $main-color;
+                border: 1px solid $main-color;
 
 
             }
@@ -141,9 +142,9 @@
             background-color: $main-color;
             padding: 14px 36px 14px 36px;
             color: $bg;
-            border: none;
+            border: 1px solid $main-color;
             border-radius: 10px;
-            transition-property: backgroundcolor, color;
+            transition-property: backgroundcolor, color, border-color;
             transition-duration: 700ms;
             transition-timing-function: ease;
             font-weight: 500;
@@ -159,6 +160,7 @@
 
                 background-color: $bg;
                 color: $main-color;
+                border: 1px solid $main-color;
 
             }
         }
