@@ -7,9 +7,10 @@
 
 
 
+
     &__first {
 
-        background-color: $header-bg;
+       
         padding: 25px 0 24px 0;
 
     }
@@ -30,11 +31,55 @@
     &__btn {
         display: none;
     }
+
+    &__title{
+        display: none;
+    }
+
+    &__text{
+        display: none;
+    }
+
+    
+    &__form{
+        padding: 67px 0 61px 0;
+        position: relative;
+    }
+
+    &__input {
+        width: 360px;
+        color: $header-bg;
+        padding: 9px 9px 9px 17px;
+        background-color: $background-color-first;
+        border: none;
+        border-radius: 16px;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 14px;
+        font-family: "Aleo", serif;
+        display: flex;
+        align-items: center;
+        outline: none;
+    }
+  
 }
 
 @media screen and (min-width: 1207px) {
 
     .header {
+
+
+        &__title{
+            display: block;
+        }
+    
+        &__text{
+            display: block;
+        }
+
+        &__first{
+            background-color: $header-bg;
+        }
 
         &__nav {
             display: block;
@@ -151,7 +196,7 @@
             font-size: 24px;
             position: absolute;
             left: 640px;
-            top: 18px;
+            top: 90px;
             cursor: pointer;
 
 
@@ -166,3 +211,7 @@
         }
     }
 }
+
+
+
+

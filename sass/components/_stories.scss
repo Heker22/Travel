@@ -3,10 +3,18 @@
     padding: 80px 0 0 0;
 
     &__wrapper {
-        background-image: linear-gradient(to top, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../../img/footer-img.png");
+        background-image: url("../../img/footer-img.png");
         background-repeat: no-repeat;
         background-size: cover;
 
+
+    }
+
+
+    &__wrap-box {
+        background-image: linear-gradient(to top, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
 
 
@@ -20,10 +28,6 @@
 
     }
 
-
-    &__wrapper {
-        padding: 30px 120px 30px 120px;
-    }
 
     &__list {
         display: flex;
@@ -63,7 +67,7 @@
 
 
 
-    
+
 }
 
 .footer__text {
@@ -75,6 +79,35 @@
 }
 
 
-.destinations__btn{
+.destinations__btn {
     margin-bottom: 55px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    padding: 14px 0 14px 0;
+    justify-content: flex-end;
+    gap: 328px;
+}
+
+.footer__svg {
+    fill: $bg;
+    width: 34px;
+    height: 34px;
+    transition-property: fill;
+    transition-duration: 700ms;
+    transition-timing-function: ease;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        fill: $title-color;
+    }
+}
+
+.footer__list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }

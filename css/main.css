@@ -61,7 +61,6 @@ body {
   background-size: cover;
 }
 .header__first {
-  background-color: rgba(242, 120, 92, 0.7);
   padding: 25px 0 24px 0;
 }
 .header__wrapp {
@@ -75,10 +74,44 @@ body {
 .header__btn {
   display: none;
 }
+.header__title {
+  display: none;
+}
+.header__text {
+  display: none;
+}
+.header__form {
+  padding: 67px 0 61px 0;
+  position: relative;
+}
+.header__input {
+  width: 360px;
+  color: rgba(242, 120, 92, 0.7);
+  padding: 9px 9px 9px 17px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  border-radius: 16px;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: "Aleo", serif;
+  display: flex;
+  align-items: center;
+  outline: none;
+}
 
 @media screen and (min-width: 1207px) {
   .header {
     /*scrivere stili per input *color,ecc.* con java script*/
+  }
+  .header__title {
+    display: block;
+  }
+  .header__text {
+    display: block;
+  }
+  .header__first {
+    background-color: rgba(242, 120, 92, 0.7);
   }
   .header__nav {
     display: block;
@@ -170,7 +203,7 @@ body {
     font-size: 24px;
     position: absolute;
     left: 640px;
-    top: 18px;
+    top: 90px;
     cursor: pointer;
   }
   .header__form-btn:hover, .header__form-btn:focus {
@@ -312,9 +345,14 @@ body {
   padding: 80px 0 0 0;
 }
 .stories__wrapper {
-  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../../img/footer-img.png");
+  background-image: url("../../img/footer-img.png");
   background-repeat: no-repeat;
   background-size: cover;
+}
+.stories__wrap-box {
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .stories__title {
   font-weight: 500;
@@ -323,9 +361,6 @@ body {
   text-align: center;
   font-family: "Red Hat Text", sans-serif;
   margin-bottom: 50px;
-}
-.stories__wrapper {
-  padding: 30px 120px 30px 120px;
 }
 .stories__list {
   display: flex;
@@ -367,4 +402,31 @@ body {
 
 .destinations__btn {
   margin-bottom: 55px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  padding: 14px 0 14px 0;
+  justify-content: flex-end;
+  gap: 328px;
+}
+
+.footer__svg {
+  fill: #fff;
+  width: 34px;
+  height: 34px;
+  transition-property: fill;
+  transition-duration: 700ms;
+  transition-timing-function: ease;
+  cursor: pointer;
+}
+.footer__svg:hover, .footer__svg:focus {
+  fill: #f2785c;
+}
+
+.footer__list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }/*# sourceMappingURL=main.css.map */
