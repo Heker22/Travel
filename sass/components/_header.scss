@@ -49,7 +49,7 @@
     &__input {
         width: 360px;
         color: $header-bg;
-        padding: 9px 9px 9px 17px;
+        padding: 17px 9px 17px 9px;
         background-color: $background-color-first;
         border: none;
         border-radius: 16px;
@@ -60,9 +60,38 @@
         display: flex;
         align-items: center;
         outline: none;
+        position: relative;
+    }
+
+    &__form-btn{
+        padding: 9px 8px 9px 8px;
+        border-radius: 10px;
+        border: 1px solid $main-color;
+        position: absolute;
+        right: 20px;
+        bottom: 68px;
+        font-family: "Red Hat Text", serif;
+            color: $bg;
+            background-color: $main-color;
+            font-weight: 500;
+            font-size: 11px;
+            transition-property: color;
+            transition-duration: 700ms;
+            transition-timing-function: ease;
+
+            &:hover,
+            &:focus {
+
+                color: $main-color;
+                background-color: $bg;
+
+
+            }
+        }
     }
   
-}
+
+
 
 @media screen and (min-width: 1207px) {
 
